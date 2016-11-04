@@ -1,0 +1,19 @@
+[push]
+	default = simple
+[user]
+	name = Karl Syvert Løland
+	email = karlsyvert.loland@norgesenergi.no
+[alias]
+	lg = log --decorate=full --oneline
+	lgg = log --decorate=full --oneline --graph
+	unstage = reset HEAD --
+	unadd = reset HEAD
+	uncommit = reset --soft HEAD^
+	savegame  = "!f(){ git add . && git commit --all -m WIP ; } ; f"
+	savegame-add = "!f(){ git add . && git commit --all --amend -m WIP ; } ; f"
+	diffs = diff --stat
+	wip = diff --stat HEAD
+	mnff = merge --no-ff
+[core]
+	editor = vim
+	autocrlf = true
